@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MapGhatAndMemberActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorPrimary">
+
+        <Button
+            android:id="@+id/go_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ic_back_arrow"
+            android:backgroundTint="@color/white"
+            android:visibility="visible" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Map Ghat &amp; Member"
+            android:textColor="@color/white"
+            android:textSize="25dp" />
+
+
+        <Button
+            android:id="@+id/delete_cart"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ic_delete"
+            android:backgroundTint="@color/white"
+            android:visibility="gone" />
+
+
+    </RelativeLayout>
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/white">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:theme="@style/MatEditTextStyle">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Select Member :-"
+                android:textSize="20dp" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight=".28"
+                android:background="@color/white_greyish"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/spnSelectMember"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:background="@android:color/transparent"
+                    android:gravity="left"
+                    android:spinnerMode="dropdown"
+                    android:textAlignment="textStart" />
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_baseline_arrow_drop_down_circle_24" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Select Group Name :-"
+                android:textSize="20dp" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight=".28"
+                android:background="@color/white_greyish"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/spnGroupName"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:background="@android:color/transparent"
+                    android:gravity="left"
+                    android:spinnerMode="dropdown"
+                    android:textAlignment="textStart" />
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_baseline_arrow_drop_down_circle_24" />
+
+            </RelativeLayout>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/register_card"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="16dp"
+                app:cardBackgroundColor="@color/darkGreen"
+                app:cardCornerRadius="24dp"
+                app:cardElevation="8dp">
+
+                <Button
+                    android:id="@+id/confirm_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/darkGreen"
+                    android:ems="15"
+                    android:text="Submit"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+            </androidx.cardview.widget.CardView>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="20dp"
+                android:hint="Member Name"
+                app:boxStrokeColor="@color/darkGreen"
+                app:boxStrokeErrorColor="@color/darkGreen"
+                app:hintTextAppearance="@style/MatEditTestStyleTextLabel"
+                app:hintTextColor="@color/darkGreen"
+                app:startIconDrawable="@drawable/ic_name">
+
+                <EditText
+                    android:id="@+id/edtMemberName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/darkGreen"
+                    android:ems="15"
+                    android:inputType="textPersonName"
+                    android:textSize="14sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="20dp"
+                android:hint="Member Mobile"
+                app:boxStrokeColor="@color/darkGreen"
+                app:boxStrokeErrorColor="@color/darkGreen"
+                app:hintTextAppearance="@style/MatEditTestStyleTextLabel"
+                app:hintTextColor="@color/darkGreen"
+                app:startIconDrawable="@drawable/ic_name">
+
+                <EditText
+                    android:id="@+id/edtMemberMobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/darkGreen"
+                    android:ems="15"
+                    android:inputType="phone"
+                    android:textSize="14sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="20dp"
+                android:hint="Member Email"
+                app:boxStrokeColor="@color/darkGreen"
+                app:boxStrokeErrorColor="@color/darkGreen"
+                app:hintTextAppearance="@style/MatEditTestStyleTextLabel"
+                app:hintTextColor="@color/darkGreen"
+                app:startIconDrawable="@drawable/ic_name">
+
+                <EditText
+                    android:id="@+id/edtMemberEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/darkGreen"
+                    android:ems="15"
+                    android:inputType="textEmailAddress"
+                    android:textSize="14sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="20dp"
+                android:hint="Group Name"
+                app:boxStrokeColor="@color/darkGreen"
+                app:boxStrokeErrorColor="@color/darkGreen"
+                app:hintTextAppearance="@style/MatEditTestStyleTextLabel"
+                app:hintTextColor="@color/darkGreen"
+                app:startIconDrawable="@drawable/ic_name">
+
+                <EditText
+                    android:id="@+id/edtGroupName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/darkGreen"
+                    android:ems="15"
+                    android:inputType="text"
+                    android:textSize="14sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="20dp"
+                android:hint="Total Amount"
+                app:boxStrokeColor="@color/darkGreen"
+                app:boxStrokeErrorColor="@color/darkGreen"
+                app:hintTextAppearance="@style/MatEditTestStyleTextLabel"
+                app:hintTextColor="@color/darkGreen"
+                app:startIconDrawable="@drawable/ic_name">
+
+                <EditText
+                    android:id="@+id/edtTotalAmount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/darkGreen"
+                    android:ems="15"
+                    android:inputType="number"
+                    android:textSize="14sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="20dp"
+                android:hint="Monthly Saving Amount"
+                app:boxStrokeColor="@color/darkGreen"
+                app:boxStrokeErrorColor="@color/darkGreen"
+                app:hintTextAppearance="@style/MatEditTestStyleTextLabel"
+                app:hintTextColor="@color/darkGreen"
+                app:startIconDrawable="@drawable/ic_name">
+
+                <EditText
+                    android:id="@+id/edtMonthlyAmount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/darkGreen"
+                    android:ems="15"
+                    android:inputType="number"
+                    android:textSize="14sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="20dp"
+                android:hint="Enter Name Of President"
+                app:boxStrokeColor="@color/darkGreen"
+                app:boxStrokeErrorColor="@color/darkGreen"
+                app:hintTextAppearance="@style/MatEditTestStyleTextLabel"
+                app:hintTextColor="@color/darkGreen"
+                app:startIconDrawable="@drawable/ic_baseline_local_hospital_24">
+
+                <EditText
+                    android:id="@+id/edtNameOfPresident"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/darkGreen"
+                    android:ems="15"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</RelativeLayout>

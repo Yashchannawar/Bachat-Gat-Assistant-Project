@@ -1,0 +1,14 @@
+<!-- res/drawable/highlight_background.xml -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Background color of the column -->
+    <item android:drawable="@android:color/transparent" />
+    <!-- Border around the column -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@android:color/transparent" />
+            <stroke
+                android:width="2dp"
+            android:color="#000000" />
+        </shape>
+    </item>
+</layer-list>

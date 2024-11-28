@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:background="@color/white">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="8dp">
+
+        <RelativeLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/img_doctor"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/loan_icon" />
+
+            <LinearLayout
+                android:id="@+id/prescriptionDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@id/img_doctor"
+                android:layout_toRightOf="@id/img_doctor"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/txtPatientName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/eventDetails"
+                    android:layout_marginTop="10dp"
+                    android:layout_toEndOf="@id/img_doctor"
+                    android:layout_toRightOf="@id/img_doctor"
+                    android:text="Name: "
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtAge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/eventDetails"
+                    android:layout_marginTop="10dp"
+                    android:layout_toEndOf="@id/img_doctor"
+                    android:layout_toRightOf="@id/img_doctor"
+                    android:text="Age : "
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/txtWeight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/eventDetails"
+                    android:layout_marginTop="10dp"
+                    android:layout_toEndOf="@id/img_doctor"
+                    android:layout_toRightOf="@id/img_doctor"
+                    android:text="Weight : "
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/txtHeight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/eventDetails"
+                    android:layout_marginTop="10dp"
+                    android:layout_toEndOf="@id/img_doctor"
+                    android:layout_toRightOf="@id/img_doctor"
+                    android:text="Height : "
+                    android:textSize="16dp" />
+
+
+                <TextView
+                    android:id="@+id/txtDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:layout_toEndOf="@id/img_doctor"
+                    android:layout_toRightOf="@id/img_doctor"
+                    android:text="Date : " />
+
+                <TextView
+                    android:id="@+id/txtHospital"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_toEndOf="@id/img_doctor"
+                    android:layout_toRightOf="@id/img_doctor"
+                    android:text="Hospital : "
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/txtMedicalCondition"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_toEndOf="@id/img_doctor"
+                    android:layout_toRightOf="@id/img_doctor"
+                    android:text="Medical: "
+                    android:textSize="16dp" />
+
+
+                <TextView
+                    android:id="@+id/txtDescription"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:layout_toEndOf="@id/img_doctor"
+                    android:layout_toRightOf="@id/img_doctor"
+                    android:text="" />
+
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/prescriptionDetails"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+
+                <Button
+                    android:id="@+id/btnDownloadReport"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/round_shape_btn"
+                    android:text="Download Report" />
+
+                <Button
+                    android:id="@+id/btnDownloadPrescription"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/round_shape_btn"
+                    android:text="Download Prescription" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</FrameLayout>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "590151274218",
+    "project_id": "bachatghatapp",
+    "storage_bucket": "bachatghatapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:590151274218:android:e2e4449ecce7cbcea6d193",
+        "android_client_info": {
+          "package_name": "rule.blochchain"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAYq7pa9Fztvsu7YiN8VEW5gHKbESJVurI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:590151274218:android:cbed776f5e316998a6d193",
+        "android_client_info": {
+          "package_name": "rule.blockchain"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAYq7pa9Fztvsu7YiN8VEW5gHKbESJVurI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
