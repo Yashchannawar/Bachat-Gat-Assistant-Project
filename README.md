@@ -1,4 +1,6 @@
 Bachat-Gat-Assistant-Project
+
+
 • Mahila Bachat Gat is a program designed to develop women’s entrepreneurship.
 • The purpose of this organization is to promote women’s self-development.
 • Self Help Group (Bachat Gat) always played an important role in the financial inclusion and economic empowerment of the economically deprived people especially women.
