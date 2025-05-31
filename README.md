@@ -1,16 +1,87 @@
+# 💰 Bachat Gat Assistant
+
+**Bachat Gat Assistant** is an Android app designed to assist Self-Help Groups (SHGs) or
+"Bachat Gats" in managing their financial activities efficiently. This tool simplifies
+record-keeping, meeting tracking, loan management, and member coordination.
+ Mahila Bachat Gat is a program designed to develop women’s entrepreneurship
+
+## 📲 Features
+
+- 📁 Group Member Management
+- 💵 Loan Tracking and Repayment
+- 🧾 Expense and Income Recordkeeping
+- 📅 Meeting Scheduling and Notifications
+- 📊 Monthly Reports Generation
+- 
+## 🛠️ Tech Stack
+
+- **Platform**: Android (Java/Kotlin)
+- **Build System**: Gradle
+- **UI Framework**: XML layouts, Android Jetpack
+- **Database**: Room / SQLite (if applicable)
+- **Jetifier/AndroidX**: Enabled for backward compatibility
+
+## 📦 Setup & Installation
+
+1. **Clone the Repository**
+```bash
+git clone https://github.com/yourusername/bachat-gat-assistant.git
+cd bachat-gat-assistant
+
+2 Open in Android Studio
+
+File → Open → Select the project folder
+
+3 Sync Gradle
+
+Let Android Studio sync the project and download dependencies.
+
+4 Run the App
+
+Connect your Android device or use the emulator.
+
+Click ▶️ (Run) in Android Studio
+
+⚙️ Configuration
+
+a] Make sure  gradle.properties includes:
+
+android.useAndroidX=true
+android.enableJetifier=true
+
+b]You can set JVM args to optimize build:
+
+org.gradle.jvmargs=-Xmx2048m -Dfile.encoding=UTF-8
+
+📁 Project Structure
+
+├── app/
+│   ├── src/
+│   │   ├── main/
+│   │   │   ├── java/       # App logic
+│   │   │   ├── res/        # Layouts, Drawables, etc.
+│   │   │   └── AndroidManifest.xml
+├── build.gradle
+├── gradle.properties
+└── README.md
+
+🤝 Contributing
+
+Contributions are welcome! Please open issues or submit pull requests for improvements or bug fixes.
+
+👨‍💻 Developed By
+
+Yash Channawar , Piyush Parate , Diwakar Bitne , Snehal Khobragade , Vibha Shastrakar
+
+Happy segmenting! 🧪✨
+
+
+Email: channawaryash16@gmail.com
+GitHub: @Yashchannawar
+
 Bachat-Gat-Assistant-Project
 
 
-• Mahila Bachat Gat is a program designed to develop women’s entrepreneurship.
-• The purpose of this organization is to promote women’s self-development.
-• Self Help Group (Bachat Gat) always played an important role in the financial inclusion and economic empowerment of the economically deprived people especially women.
-• Bachat Gat Assistant is a Self-Help Group Assistant that performs calculations and all activities of self-help groups. Our Bachat Gat Assistant is a Savings Group App that
-manages all transactions and activities of Savings Groups.
-• This savings group can be used by president and all members. 
-Only the President shall have the right to enter into all financial transactions. 
-All members can view that information by installing Bachat Gat Assistant in their mobile and monitor all financial transactions.
-• The app plays a very important role in promoting financially.
-• Women still being maintained in the pen paper format which is not efficient way so this app do the work technically. 
-• Bachat Gat app is a powerful tool that promotes financial inclusion, online transaction transparency.
 
-Technology :- • JAVA • XML • ANDROID SDK • ANDROID STUDIO • SQL • TESTING
+
+
